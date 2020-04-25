@@ -21,8 +21,8 @@
 
 .logo_place_header {
   height: 32px;
-  margin-top: 30px;
-  margin-left: 64px;
+  top: 30px;
+  left: 64px;
   background-image: url("../images/logo_place_header.svg");
   position: absolute;
 }
@@ -30,7 +30,7 @@
 .header__title {
   width: 730px;
   font-weight: bold;
-  margin-left: 64px;
+  margin: 0 0 0 64px;
   align-self: center;
   font-size: 102px;
   line-height: 96px;
@@ -40,16 +40,17 @@
 .header__subtitle {
   position: absolute;
   width: 388px;
-  margin-left: 64px;
-  padding-bottom: 30px;
+  left: 64px;
+  bottom: 30px;
   align-self: flex-end;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
   z-index: 2;
+  margin: 0em;
 }
 
-.header__subtitle_link {
+.header__link {
   color: #2f80ed;
   text-decoration: none;
 }
@@ -67,7 +68,6 @@
   position: absolute;
   top: 64px;
   right: 0;
-  bottom: 150px;
   background-color: #2f80ed;
   width: 568px;
   height: 568px;
@@ -92,6 +92,7 @@
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
+  margin: 0;
 }
 
 .two-columns__main-text {
@@ -99,7 +100,7 @@
   min-width: 784px;
 }
 
-P:nth-of-type(3n) {
+.two-columns__main-text p:last-child {
   margin: 0;
 }
 
@@ -110,7 +111,7 @@ P:nth-of-type(3n) {
   margin: 0 0 30px;
 }
 
-.span-accent {
+.two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: bold;
@@ -135,7 +136,7 @@ P:nth-of-type(3n) {
 
 .section-subtitle {
   width: 60%;
-  line-height: 43px;
+  line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   text-align: center;
@@ -150,19 +151,19 @@ P:nth-of-type(3n) {
   flex-direction: row;
 }
 
-.table_cell {
+.table__cell {
   width: 250px;
   margin-top: 60px;
 }
 
-.table_heading {
+.table__heading {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bolder;
   margin: 0;
 }
 
-.table_text {
+.table__text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -171,6 +172,7 @@ P:nth-of-type(3n) {
 
 .feinman {
   height: 790px;
+  padding-top: 100px;
   margin: 0;
   background-color: #f2f2f2;
   position: relative;
@@ -201,7 +203,7 @@ P:nth-of-type(3n) {
 .feynman__link {
   text-decoration: none;
   position: absolute;
-  height: 50%;
+  top: 50%;
   right: 48px;
   line-height: 51px;
   font-size: 36px;
@@ -218,35 +220,20 @@ P:nth-of-type(3n) {
   overflow: hidden;
 }
 
-.section-title__theme_dark {
-  width: 60%;
+.section-title_theme_dark {
   margin: 90px auto 20px;
-  text-align: center;
-  line-height: 69px;
-  font-size: 60px;
-  font-weight: bolder;
   color: white;
   z-index: 1;
 }
 
-.section-subtitle__theme_dark {
-  width: 60%;
+.section-subtitle_theme_dark {
   margin: 0 auto;
-  text-align: center;
-  line-height: 39px;
-  font-size: 24px;
-  font-weight: normal;
   color: white;
   z-index: 1;
 }
 
-.table__theme_dark {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-direction: row;
+.table_theme_dark {
   margin: 0 auto 90px;
-  width: 1100px;
   z-index: 1;
 }
 
@@ -258,17 +245,9 @@ P:nth-of-type(3n) {
 }
 
 .table__heading_theme_dark {
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: bolder;
-  margin: 0;
 }
 
 .table__text_theme_dark {
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-  margin: 20px 0 0;
 }
 
 .kaufman__triangle {
@@ -301,10 +280,11 @@ P:nth-of-type(3n) {
 
 .footer__column_content_copyright {
   flex-basis: 711px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
-.logo__place_footer {
+.logo_place_footer {
   height: 35px;
   background-image: url(../images/logo_place_footer.svg);
   background-repeat: no-repeat;
@@ -314,9 +294,6 @@ P:nth-of-type(3n) {
 .footer__author {
   color: white;
   margin: 18px 0 18px;
-  position: absolute;
-  left: 0em;
-  bottom: 0em;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -351,7 +328,7 @@ P:nth-of-type(3n) {
   color: white;
 }
 
-.footer_social-icon {
+.footer__social-icon {
   width: 16px;
   height: 16px;
 }
