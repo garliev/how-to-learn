@@ -1,0 +1,8 @@
+@import url(../video__iframe/video__iframe.css);
+
+.video__iframes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;  
+  margin: 50px auto 0;
+}

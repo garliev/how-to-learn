@@ -1,0 +1,10 @@
+@import url(../footer__column.css);
+@import url(../../../logo/logo.css);
+@import url(../../../logo/_place/logo_place_footer.css);
+@import url(../../__author/footer__author.css);
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+}

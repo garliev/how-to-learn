@@ -1,0 +1,14 @@
+@import url(../two-columns/two-columns.css);
+
+/* возможно это не лучшее решение, 
+но я ничего не смог придумать лучше как расположить видео, 
+поверх границ двух секций.
+Раздул блок и сделал отрицательный маржин */
+
+.oakley {
+    display: flex;
+    justify-content: center;
+    background-color: #f3f3f3;
+    padding-top: 160px;
+    margin-top: -80px;
+}
