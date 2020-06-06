@@ -1,7 +1,7 @@
-@import url(../cards/_item/cards_item.css);
-@import url(./_image/cards_image.css);
-@import url(./_title/cards_title.css);
-@import url(./_description/cards_description.css);
+@import url(../cards/__item/cards__item.css);
+@import url(./__image/cards__image.css);
+@import url(./__title/cards__title.css);
+@import url(./__description/cards__description.css);
 
 .cards {
     display: flex;

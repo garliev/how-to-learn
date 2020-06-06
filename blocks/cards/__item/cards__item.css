@@ -1,4 +1,4 @@
-.cards_item {
+.cards__item {
     width: 240px;
     display: flex;
     flex-wrap: wrap;
@@ -9,6 +9,6 @@
     
 }
 
-.cards_item:nth-child(3) {
+.cards__item:nth-child(3) {
     margin: 0 0 60px;
 }
