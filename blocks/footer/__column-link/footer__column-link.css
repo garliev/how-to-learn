@@ -1,0 +1,12 @@
+.footer__column-link{
+    position: relative;
+    text-decoration: none;
+    color:#f2f2f2;
+    width: auto;
+    height: auto;
+    opacity: 1;
+  }
+  .footer__column-link:hover{
+    opacity: 0.6;
+    transition: opacity 2s ease;
+  }

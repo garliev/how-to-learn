@@ -1,0 +1,12 @@
+.footer__column-links{
+    position: relative;
+    padding-left: 0px;
+    padding-bottom: 16px;
+    height: auto;
+    width: auto;
+    line-height:30px;
+    font-size:18px; 
+    font-weight:normal;
+    white-space: nowrap;
+    list-style: none;
+  }
